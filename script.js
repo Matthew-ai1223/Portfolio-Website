@@ -78,9 +78,9 @@ const projects = {
         {
             title: "Edutech Platform 300plus",
             description: "A comprehensive learning management system for educational institutions",
-            image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-            liveUrl: "https://example.com/300plus",
-            githubUrl: "https://github.com/yourusername/300plus",
+            image: "https://i.ibb.co/8nNng9VP/Screenshot-2025-04-08-032246.png",
+            liveUrl: "https://300plus.great-site.net",
+            githubUrl: "https://github.com/Matthew-ai1223/300plus-p.git",
             status: "completed"
         },
         {
