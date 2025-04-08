@@ -70,9 +70,9 @@ const projects = {
         {
             title: "Edutech Platform Scholar",
             description: "An innovative educational platform for students and teachers",
-            image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-            liveUrl: "https://example.com/scholar",
-            githubUrl: "https://github.com/yourusername/scholar",
+            image: "https://i.ibb.co/8gdgxndR/screenshot-desktop.png",
+            liveUrl: "https://scholar.great-site.net",
+            githubUrl: "https://github.com/Matthew-ai1223/scholar-p.git",
             status: "completed"
         },
         {
