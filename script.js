@@ -72,7 +72,7 @@ const projects = {
             description: "An innovative educational platform for students and teachers",
             image: "https://i.ibb.co/8gdgxndR/screenshot-desktop.png",
             liveUrl: "https://scholer.great-site.net",
-            githubUrl: "https://github.com/Matthew-ai1223/scholar-p.git",
+            githubUrl: "https://github.com/Matthew-ai1223/scholer-p.git",
             status: "completed"
         },
         {
@@ -103,14 +103,14 @@ const projects = {
     ongoing: [
         {
             title: "AI Chatbot",
-            description: "A Python-based chatbot using machine learning",
+            description: "A Python-based medical chatbot using machine learning",
             image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
             githubUrl: "https://github.com/yourusername/chatbot",
             status: "ongoing"
         },
         {
-            title: "Portfolio Website",
-            description: "A responsive portfolio website using modern web technologies",
+            title: "Mobile App",
+            description: "A responsive mobile app using modern web technologies",
             image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
             githubUrl: "https://github.com/yourusername/portfolio",
             status: "ongoing"
