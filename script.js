@@ -94,7 +94,7 @@ const projects = {
         {
             title: "CBT System",
             description: "A comprehensive Computer-Based Testing platform for educational institutions",
-            image: "https://images.unsplash.com/photo-1523240795612-9a054b0db0a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            image: "https://epiloguesystems.com/wp-content/uploads/2022/10/training-systems.webp",
             liveUrl: "https://300plus.great-site.net/backend/CBT_Test/register.php",
             githubUrl: "https://github.com/yourusername/cbt-system",
             status: "completed"
