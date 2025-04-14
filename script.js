@@ -92,11 +92,11 @@ const projects = {
             status: "completed"
         },
         {
-            title: "Task Management App",
-            description: "A React Native mobile app for task management",
+            title: "CBT System",
+            description: "A comprehensive Computer-Based Testing platform for educational institutions",
             image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-            liveUrl: "https://example.com/taskapp",
-            githubUrl: "https://github.com/yourusername/taskapp",
+            liveUrl: "https://example.com/cbt-system",
+            githubUrl: "https://github.com/yourusername/cbt-system",
             status: "completed"
         }
     ],
