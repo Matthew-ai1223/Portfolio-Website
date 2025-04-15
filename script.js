@@ -88,7 +88,7 @@ const projects = {
             description: "A full-featured e-commerce platform built with PHP and MySQL for Agriculture Products",
             image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
             liveUrl: "https://example.com/ecommerce",
-            githubUrl: "https://github.com/yourusername/ecommerce",
+            githubUrl: "https://github.com/Matthew-ai1223/ecommerce-p.git",
             status: "completed"
         },
         {
@@ -96,7 +96,7 @@ const projects = {
             description: "A comprehensive Computer-Based Testing platform for educational institutions",
             image: "https://epiloguesystems.com/wp-content/uploads/2022/10/training-systems.webp",
             liveUrl: "https://300plus.great-site.net/backend/CBT_Test/register.php",
-            githubUrl: "https://github.com/yourusername/cbt-system",
+            githubUrl: "https://github.com/Mitth2w-ai122323/cbt-syst.gitem.git",
             status: "completed"
         }
     ],
@@ -105,7 +105,7 @@ const projects = {
             title: "AI Chatbot",
             description: "A Python-based medical chatbot using machine learning",
             image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-            githubUrl: "https://github.com/yourusername/chatbot",
+            githubUgitrl: "https://github.com/yourusername/chatbot",
             status: "ongoing"
         },
         {
