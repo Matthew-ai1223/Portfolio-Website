@@ -85,7 +85,7 @@ const projects = {
         },
         {
             title: "E-commerce Platform",
-            description: "A full-featured e-commerce platform built with PHP and MySQL agriculture products",
+            description: "A full-featured e-commerce platform built with PHP and MySQL for Agriculture Products",
             image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
             liveUrl: "https://example.com/ecommerce",
             githubUrl: "https://github.com/yourusername/ecommerce",
