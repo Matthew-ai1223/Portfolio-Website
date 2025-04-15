@@ -69,7 +69,7 @@ const projects = {
     successful: [
         {
             title: "Edutech Platform Scholar",
-            description: "An innovative educational platform for students and teachers",
+            description: "An innovative educational platform for Tertiary Institutions Students ",
             image: "https://i.ibb.co/8gdgxndR/screenshot-desktop.png",
             liveUrl: "https://scholer.great-site.net",
             githubUrl: "https://github.com/Matthew-ai1223/scholer-p.git",
@@ -77,7 +77,7 @@ const projects = {
         },
         {
             title: "Edutech Platform 300plus",
-            description: "A comprehensive learning management system for educational institutions",
+            description: "A comprehensive learning management system for SSCE, JAMB, WAEC, NECO, and the likes",
             image: "https://i.ibb.co/8nNng9VP/Screenshot-2025-04-08-032246.png",
             liveUrl: "https://300plus.great-site.net",
             githubUrl: "https://github.com/Matthew-ai1223/300plus-p.git",
@@ -85,7 +85,7 @@ const projects = {
         },
         {
             title: "E-commerce Platform",
-            description: "A full-featured e-commerce platform built with PHP and MySQL",
+            description: "A full-featured e-commerce platform built with PHP and MySQL agriculture products",
             image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
             liveUrl: "https://example.com/ecommerce",
             githubUrl: "https://github.com/yourusername/ecommerce",
@@ -109,10 +109,10 @@ const projects = {
             status: "ongoing"
         },
         {
-            title: "Mobile App",
-            description: "A responsive mobile app using modern web technologies",
-            image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-            githubUrl: "https://github.com/yourusername/portfolio",
+            title: "E-Learning Mobile App",
+            description: "A comprehensive mobile learning platform with interactive courses and real-time progress tracking",
+            image: "https://images.unsplash.com/photo-1522881193457-37ae97c905bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            githubUrl: "https://github.com/yourusername/e-learning-mobile",
             status: "ongoing"
         }
     ]
