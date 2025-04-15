@@ -86,7 +86,7 @@ const projects = {
         {
             title: "E-commerce Platform",
             description: "A full-featured e-commerce platform built with PHP and MySQL for Agriculture Products",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            image: "https://assets.entrepreneur.com/content/3x2/2000/20150629055642-shutterstock-208664602.jpeg?format=pjeg&auto=webp&crop=16:9&width=675&height=380",
             liveUrl: "https://example.com/ecommerce",
             githubUrl: "https://github.com/Matthew-ai1223/ecommerce-p.git",
             status: "completed"
@@ -104,14 +104,14 @@ const projects = {
         {
             title: "AI Chatbot",
             description: "A Python-based medical chatbot using machine learning",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            image: "https://admin.binariks.com/storage/2024-03/bin-picture-040324-v01-main.webp",
             githubUgitrl: "https://github.com/yourusername/chatbot",
             status: "ongoing"
         },
         {
             title: "E-Learning Mobile App",
             description: "A comprehensive mobile learning platform with interactive courses and real-time progress tracking",
-            image: "https://images.unsplash.com/photo-1522881193457-37ae97c905bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            image: "https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/a806dde3f0f1e96e3949bcfb13564359c532b989",
             githubUrl: "https://github.com/yourusername/e-learning-mobile",
             status: "ongoing"
         }
