@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Adeniyi Olalekan Matthew | Full Stack Developer</title>
+    <meta name="description" content="Get in touch with Adeniyi Olalekan Matthew - Full Stack Developer in Nigeria. Contact me for web development, mobile development, and machine learning projects.">
+    <meta name="keywords" content="Contact Full Stack Developer Nigeria, Web Developer Contact Nigeria, Mobile Developer Contact Nigeria, Software Engineer Contact Nigeria">
+    <meta name="author" content="Adeniyi Olalekan Matthew">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Contact Me - Adeniyi Olalekan Matthew">
+    <meta property="og:description" content="Get in touch with Adeniyi Olalekan Matthew - Full Stack Developer in Nigeria. Contact me for web development, mobile development, and machine learning projects.">
+    <meta property="og:image" content="cv image.png">
+    <meta property="og:url" content="https://adeniyiolalekanportfolio.vercel.app/cot.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Me - Adeniyi Olalekan Matthew">
+    <meta name="twitter:description" content="Get in touch with Adeniyi Olalekan Matthew - Full Stack Developer in Nigeria.">
+    <meta name="twitter:image" content="cv image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="cv image.png">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+            opacity: 0.04;
+            z-index: 0;
+        }
+
+        .contact-page::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 80%, rgba(161, 196, 253, 0.2) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(194, 233, 251, 0.2) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-header {
+            text-align: center;
+            color: #333;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .contact-header::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #43cea2, #185a9d);
+            border-radius: 2px;
+        }
+
+        .contact-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+            font-weight: 700;
+            background: linear-gradient(45deg, #185a9d, #43cea2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-weight: 300;
+            color: #333;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            color: #333;
+            border: 1px solid rgba(161, 196, 253, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card i {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: #43cea2;
+            background: none;
+            -webkit-text-fill-color: initial;
+        }
+
+        .contact-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: #185a9d;
+        }
+
+        .contact-card p {
+            opacity: 0.95;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card strong {
+            color: #43cea2;
+            font-weight: 600;
+        }
+
+        .social-media-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 3rem;
+        }
+
+        .social-media-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .social-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .social-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-card a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .social-card:hover a {
+            color: var(--highlight-color);
+        }
+
+        .back-to-portfolio {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: var(--highlight-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--highlight-color);
+        }
+
+        .back-btn:hover {
+            background: transparent;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+        }
+
+        .contact-form-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-form-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.3);
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 1rem;
+            background: var(--highlight-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #d63384;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+        }
+
+        .contact-form button:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-header h1 {
+                font-size: 2rem;
+            }
+
+            .contact-header p {
+                font-size: 1rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-container {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-card,
+        .social-card,
+        .contact-form-section {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .contact-card:nth-child(1) { animation-delay: 0.1s; }
+        .contact-card:nth-child(2) { animation-delay: 0.2s; }
+        .contact-card:nth-child(3) { animation-delay: 0.3s; }
+        .social-card:nth-child(1) { animation-delay: 0.4s; }
+        .social-card:nth-child(2) { animation-delay: 0.5s; }
+        .social-card:nth-child(3) { animation-delay: 0.6s; }
+        .social-card:nth-child(4) { animation-delay: 0.7s; }
+        .contact-form-section { animation-delay: 0.8s; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">My Portfolio</div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#languages">Languages</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="cot.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-page">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Get In Touch</h1>
+                <p>Ready to start your next project? I'm here to help bring your ideas to life. Whether you need a website, mobile app, or any other software solution, let's work together to create something amazing!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>Send me an email for project inquiries, collaborations, or just to say hello!</p>
+                    <p><strong>Available for freelance work</strong></p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Based in Lagos, Nigeria</p>
+                    <p><strong>Available for remote work worldwide</strong></p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Response Time</h3>
+                    <p>I typically respond within 24 hours</p>
+                    <p><strong>Quick turnaround for urgent projects</strong></p>
+                </div>
+            </div>
+
+            <div class="social-media-section" style="background-color: #000000;">
+                <h2>Connect With Me</h2>
+                <div class="social-grid">
+                    <div class="social-card">
+                        <a href="https://github.com/Matthew-ai1223" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub</h3>
+                            <p>View my projects and code</p>
+                        </a>
+                    </div>
+
+                    <div class="social-card">
+                        <a href="https://www.linkedin.com/in/adeniyi-olalekan-60a229293" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <h3>LinkedIn</h3>
+                            <p>Professional network</p>
+                        </a>
+                    </div>
+
+                    <div class="social-card">
+                        <a href="https://www.facebook.com/adeniyi.olamilekan.756/" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            <h3>Facebook</h3>
+                            <p>Connect socially</p>
+                        </a>
+                    </div>
+
+                    <div class="social-card">
+                        <a href="https://wa.link/32dcji" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <h3>WhatsApp</h3>
+                            <p>Follow for updates</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-section" style="background-color: #000000;">
+                <h2>Send Me a Message</h2>
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your WhatsApp Number" required>
+                    <textarea name="message" placeholder="Tell me about your project or inquiry..." rows="5" required></textarea>
+                    <input type="hidden" name="access_key" value="b94b6499-c9ac-47e1-9e08-be5e7f56a70f">
+                    <input type="hidden" name="redirect" value="thank-you.html">
+                    <input type="hidden" name="from_name" value="Contact Page Form">
+                    <input type="hidden" name="subject" value="New Contact Form Submission">
+                    <button type="submit" id="submit-button" disabled>Send Message</button>
+                </form>
+            </div>
+
+            <div class="back-to-portfolio">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Matthew-ai1223" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adeniyi-olalekan-60a229293" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/adeniyi.olamilekan.756/" title="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> Adeniyi Olalekan Matthew. All rights reserved.</p>
+        <p id="currentDateTime"></p>
+    </footer>
+
+    <script>
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Function to update date and time
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            };
+            document.getElementById('currentDateTime').textContent = now.toLocaleDateString('en-US', options);
+        }
+
+        // Update immediately and then every second
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+
+        // Hamburger Menu Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                });
+
+                // Close menu when clicking on a nav link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburger.classList.remove('active');
+                        navLinks.classList.remove('active');
+                    });
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                        hamburger.classList.remove('active');
+                        navLinks.classList.remove('active');
+                    }
+                });
+            }
+        });
+
+        // Form validation
+        const contactForm = document.querySelector('.contact-form');
+        const submitButton = document.getElementById('submit-button');
+
+        // Function to check if all required fields are filled
+        function checkFormValidity() {
+            const name = contactForm.querySelector('input[name="name"]').value.trim();
+            const email = contactForm.querySelector('input[name="email"]').value.trim();
+            const phone = contactForm.querySelector('input[name="phone"]').value.trim();
+            const message = contactForm.querySelector('textarea[name="message"]').value.trim();
+            
+            // Enable button only if all fields are filled
+            submitButton.disabled = !(name && email && phone && message);
+        }
+
+        // Add input event listeners to all form fields
+        contactForm.querySelectorAll('input, textarea').forEach(field => {
+            field.addEventListener('input', checkFormValidity);
+        });
+
+        // WhatsApp number validation
+        function isValidWhatsAppNumber(number) {
+            // General international phone number validation
+            // Accepts numbers with +countrycode, spaces, dashes, and at least 8 digits
+            const whatsappRegex = /^\+?\d{8,20}$/;
+            // Remove spaces, dashes, and parentheses for validation
+            const cleaned = number.replace(/[\s\-()]/g, '');
+            return whatsappRegex.test(cleaned);
+        }
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Validate WhatsApp number
+            const whatsappNumber = contactForm.querySelector('input[name="phone"]').value;
+            if (!isValidWhatsAppNumber(whatsappNumber)) {
+                alert('Please enter a valid WhatsApp number');
+                return;
+            }
+            
+            // Show loading state
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+            
+            try {
+                // Submit form
+                const formData = new FormData(contactForm);
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    alert('Message sent successfully! I will get back to you soon.');
+                    contactForm.reset();
+                    submitButton.disabled = true;
+                } else {
+                    console.error('Form submission error:', response.statusText);
+                    window.location.href = 'thank-you.html';
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                window.location.href = 'thank-you.html';
+            } finally {
+                submitButton.textContent = 'Send Message';
+                checkFormValidity();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -76,10 +76,18 @@ const projects = {
             status: "completed"
         },
         {
+            title: "School Management System",
+            description: "A comprehensive School Management System for educational institutions that include student management, staff management, online payment, student result management, and other features",
+            image: "https://i.postimg.cc/v8LZjYmR/school.png",
+            liveUrl: "https://acecollege.ng",
+            githubUrl: "",
+            status: "completed"
+        },
+        {
             title: "Edutech Platform 300plus",
             description: "A comprehensive learning management system for SSCE, JAMB, WAEC, NECO, and the likes",
             image: "https://i.ibb.co/8nNng9VP/Screenshot-2025-04-08-032246.png",
-            liveUrl: "https://300plus.great-site.net",
+            liveUrl: "https://300plus.ng",
             githubUrl: "https://github.com/Matthew-ai1223/300plus-p.git",
             status: "completed"
         },
@@ -97,6 +105,14 @@ const projects = {
             image: "https://epiloguesystems.com/wp-content/uploads/2022/10/training-systems.webp",
             liveUrl: "https://300plus.great-site.net/backend/CBT_Test/register.php",
             githubUrl: "https://github.com/Mitth2w-ai122323/cbt-syst.gitem.git",
+            status: "completed"
+        },
+        {   
+            title: "Clinical Decision Support System",
+            description: "A AI-powered comprehensive Clinical Decision Support System for medical institutions",
+            image: "https://i.postimg.cc/9M013V4t/Screenshot-2025-07-05-124135.png",
+            liveUrl: "https://dedocweb.vercel.app/",
+            githubUrl: "https://dedoc.vercel.app/",
             status: "completed"
         }
     ],
