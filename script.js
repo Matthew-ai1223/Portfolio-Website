@@ -130,6 +130,13 @@ const projects = {
             image: "https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/a806dde3f0f1e96e3949bcfb13564359c532b989",
             githubUrl: "https://github.com/yourusername/e-learning-mobile",
             status: "ongoing"
+        },
+        {
+            title: "A video chart platfom",
+            description: "A real-time video chart platform for educational institutions and commercial organizations",
+            image: "https://i.ytimg.com/vi/Rpg9_roAB48/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDU5lo6o56XV320DuGw9OdhGXGlqA",
+            githubUrl: "https://class-room-eta.vercel.app/",
+            status: "ongoing"
         }
     ]
 };
