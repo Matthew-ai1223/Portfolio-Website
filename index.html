@@ -238,11 +238,29 @@
                 </div>
             </div>
             <div class="language-card">
+                <h3>Java</h3>
+                <p>Spring Boot, Enterprise Applications</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 68%"></div>
+                </div>
+            </div>
+            <div class="language-card">
                 <h3>SQL</h3>
                 <p>Database design and management</p>
                 <div class="progress-bar">
                     <div class="progress" style="width: 80%"></div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats-section">
+        <h2>Project Impact</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <div class="stat-number" data-target="1203">0</div>
+                <div class="stat-label">Total Users Across All Projects</div>
             </div>
         </div>
     </section>
@@ -283,6 +301,7 @@
             <a href="https://github.com/Matthew-ai1223" title="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/adeniyi-olalekan-" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.facebook.com/adeniyi.olamilekan.756/" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/ola77623" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
         </div>
         <p>&copy; <span id="currentYear"></span> My Portfolio. All rights reserved.</p>
         <p id="currentDateTime"></p>
@@ -311,6 +330,48 @@
         // Update immediately and then every second
         updateDateTime();
         setInterval(updateDateTime, 1000);
+
+        // Animate statistics counter
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16); // 60fps
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start).toLocaleString();
+                }
+            }, 16);
+        }
+
+        // Intersection Observer for stats animation
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumber = entry.target.querySelector('.stat-number');
+                    const target = parseInt(statNumber.getAttribute('data-target'));
+                    if (statNumber.textContent === '0') {
+                        animateCounter(statNumber, target);
+                    }
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe stats section when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const statsSection = document.querySelector('.stats-section');
+            if (statsSection) {
+                statsObserver.observe(statsSection);
+            }
+        });
     </script>
     <script src="script.js"></script>
 </body>
