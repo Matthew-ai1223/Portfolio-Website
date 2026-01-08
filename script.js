@@ -121,7 +121,7 @@ const projects = {
             image: "https://araferme.ng/accet/img/ara_logo.jpeg",
             liveUrl: "https://araferme.ng/",
             githubUrl: "", 
-            status: "active"
+            status: "Completed"
         }
     ],
     ongoing: [
