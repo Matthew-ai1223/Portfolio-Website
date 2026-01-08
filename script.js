@@ -114,6 +114,14 @@ const projects = {
             liveUrl: "https://dedocweb.vercel.app/",
             githubUrl: "https://dedoc.vercel.app/",
             status: "completed"
+        },
+        {
+            title: "ÀRÀ FERME LTD",
+            description: "ÀRÀ FERME LTD is a Nigerian agricultural brand that leverages nature to raise livestock and cultivate crops, providing healthy and sustainable foods while supporting local agricultural growth and productivity.", 
+            image: "https://araferme.ng/accet/img/ara_logo.jpeg",
+            liveUrl: "https://araferme.ng/",
+            githubUrl: "", 
+            status: "active"
         }
     ],
     ongoing: [
